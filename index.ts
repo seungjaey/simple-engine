@@ -11,6 +11,7 @@ async function run(url: string) {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto(url, {
+    // NOTE: try 'domcontentloaded'
     waitUntil: 'networkidle0'
   })
   const linkElementList = await page.$$('a')
@@ -26,7 +27,7 @@ async function run(url: string) {
     uniq,
     toArray
   )
-  console.log(linkList)
+  console.log(linkList.length)
   await browser.close()
 }
 
