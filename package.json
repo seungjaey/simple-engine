@@ -1,0 +1,29 @@
+{
+  "name": "simple-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seungjaey/simple-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seungjaey/simple-engine/issues"
+  },
+  "homepage": "https://github.com/seungjaey/simple-engine#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@fxts/core": "^0.9.0",
+    "puppeteer": "^17.1.3"
+  }
+}
